@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="calStyle.css">
+	<script type="text/javascript" src="calScript.js"></script>
+</head>
+<body>
+	<div id="monitor">
+		<i id="1" class="gray fas fa-plus"></i>
+		<i id="2" class="gray fas fa-minus"></i>
+		<i id="3" class="gray fas fa-times"></i>
+		<i id="4" class="gray fas fa-divide"></i>
+		<h2 id="view"></h2>
+	</div>
+	<div>
+		<button onclick="press(1)">1</button>
+		<button onclick="press(2)">2</button>
+		<button onclick="press(3)">3</button>
+	</div>
+	<div>
+		<button onclick="press(4)">4</button>
+		<button onclick="press(5)">5</button>
+		<button onclick="press(6)">6</button>
+	</div>
+	<div>
+		<button onclick="press(7)">7</button>
+		<button onclick="press(8)">8</button>
+		<button onclick="press(9)">9</button>
+	</div>
+	<div>
+		<button onclick="oper(1)">+</button>
+		<button onclick="press(0)">0</button>
+		<button onclick="oper(2)"> - </button>
+	</div>
+	<div>
+		<button onclick="oper(3)">x</button>
+		<button onclick="oper(4)"> ÷ </button>
+		<button onclick="pushStr() , equal(arr[0],arr[1],operation)">=</button>
+		<button onclick="clearRes()"> C </button>
+	</div>
+	
+</body>
+</html>
